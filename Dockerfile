@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
     tmate openssh-client curl python3 tmux tzdata \
-    && ln -fs /usr/share/zoneinfo/Asia/Kathmandu /etc/localtime \
+    && ln -fs /usr/share/zoneinfo/Asia/Dhaka /etc/localtime \
     && dpkg-reconfigure -f noninteractive tzdata
 
 # Copy startup script
